@@ -8,3 +8,5 @@
 ## Print da tela da página criada (Curriculum Vitae)
 
 ![Curriculum](tp-2-mclarafnd/print.png)
+
+[Curriculum](tp-2-mclarafnd/imagemcurriculum.jpeg)
