@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f1f5;
+  color: #222;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  display: flex;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#sobre_mim {
+  background-color: #9bb5e2; /* tom azul claro parecido */
+  color: #222;
+  width: 280px;
+  padding: 25px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#sobre_mim img {
+  border-radius: 6px;
+  margin-bottom: 20px;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+#sobre_mim h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 0 12px 0;
+  padding-bottom: 3px;
+  border-bottom: 1px solid hsl(350, 55%, 38%);
+  width: 100%;
+}
+
+#sobre_mim p {
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#sobre_mim ul {
+  list-style: disc inside;
+  padding-left: 10px;
+  font-size: 0.85rem;
+  margin: 0;
+}
+#sobre_mim ul li {
+  margin-bottom: 6px;
+}
+
+#conteudo {
+  flex: 1;
+  padding: 40px 40px 40px 50px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#nome h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.07em;
+}
+
+#conteudo h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #980c46; 
+}
+
+#conteudo p {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+#conteudo ul {
+  list-style: disc inside;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 18px;
+  font-size: 0.9rem;
+}
+
+#conteudo ul li {
+  margin-bottom: 6px;
+}
+
+#conteudo h2 + ul {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 20px 10px;
+  }
+  
+  #sobre_mim {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #sobre_mim p, #sobre_mim ul {
+    text-align: center;
+  }
+  
+  #conteudo {
+    padding: 25px 20px;
+  }
+  
+  #nome h1 {
+    font-size: 1.5rem;
+  }
+}
